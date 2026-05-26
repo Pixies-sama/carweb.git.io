@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     scroll-behavior: auto;
+     list-style-type: none;
+     text-decoration: none;
+     font-family: poppins;
+}
+
+.main {
+     background-image: url(../media/images\ \(28\).jpeg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 70vh;
+}
+
+.section_one {
+     background: rgba(27, 18, 9, 0.82);
+     width: 100%;
+     height: 100%;
+}
+
+.nav {
+     width: 100%;
+     position: fixed;
+     margin: auto;
+}
+
+.nav_bar {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 30px 60px;
+}
+
+.nav h4 a{
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 600;
+     font-size: 24px;
+}
+
+.nav ul {
+     display: flex;
+     justify-content: space-between;
+}
+
+.nav ul li {
+     padding: 10px 20px;
+}
+
+.nav ul a {
+     color: white;
+     font-style: normal;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 16px;
+     font-weight: 600;
+}
+
+.nav ul li:hover {
+     color: rgb(247, 72, 9);
+     background-color: rgba(240, 255, 255, 0.596);
+     transform: scale(1.1);
+     transition: all 0.5s ease-in-out;
+     border-radius: 14px;
+
+}
+
+.one:hover .dropdown_1 {
+     visibility: visible;
+}
+
+.nav ul li a:hover {
+     color: rgb(247, 72, 9);
+}
+
+.dropdown_1 {
+     /* width: 500px; */
+     background-color: white;
+     border-radius: 10px;
+     padding: 10px 10px;
+     display: flex;
+     gap: 20px;
+     justify-content: space-between;
+     position: absolute;
+     left: 10px;
+     top: 100%;
+     visibility: hidden;
+     box-shadow: 1px 1px 5px hsla(0, 0%, 0%, 0.89);
+}
+
+.one .dropdown_1 a {
+     color: black;
+     font-size: 12px;
+}
+
+.contact {
+     padding: 15px 28px;
+     background-color: goldenrod;
+     color: white;
+     border: rgb(105, 103, 103) 1px solid;
+     border-radius: 8px;
+}
+
+.contact a {
+     color: white;
+     font-size: 16px;
+     font-weight: 500;
+     font-family: poppins;
+}
+.sec_one {
+     padding-top: 200px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.sec_one .sec_one_content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     gap: 10px;
+}
+
+.sec_one_content h4 {
+     color: rgb(243, 176, 7);
+     font-size: 14px;
+     font-weight: 600;
+     font-display: auto;
+     font-family: poppins;
+     background-color: rgba(255, 217, 0, 0.326);
+     padding: 6px 10px;
+     border-radius: 6px;
+}
+
+.sec_one_content h1 {
+     color: rgb(227, 226, 225);
+     font-size: 60px;
+     font-weight: 600;
+     font-display: auto;
+     font-family: poppins;
+}
+
+.sec_one_content p {
+     max-width: 450px;
+     width: 100%;
+     word-spacing: 2px;
+     text-align: center;
+     color: rgb(181, 179, 177);
+     font-size: 14px;
+     font-weight: 500;
+     font-display: auto;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     padding: 10px 20px;
+}
+
+.active_btn {
+     padding: 15px 28px;
+     background-color: rgb(230, 143, 3);
+     color: white;
+     border: rgb(105, 103, 103) 1px solid;
+     border-radius: 8px;
+     font-family: poppins;
+}
+
+.inactive_btn {
+     padding: 15px 28px;
+     background-color: rgba(218, 165, 32, 0.034);
+     color: white;
+     border: rgb(105, 103, 103) 1px solid;
+     border-radius: 8px;
+     font-family: poppins;
+}
+.section_two{
+     background: rgba(216, 216, 216, 0.493);
+     width: 100%;
+     height: 100%;
+}
+.sec_two {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     padding: 30px 60px;
+     gap: 20px;
+}
+.sec_two img{
+     width: 100%;
+     height: 250px;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+}
+.sec_two .boxes{
+     width: 300px;
+     background-color: rgb(225, 225, 225);
+     border-radius: 20px;
+     box-shadow:0 3px 3px 0px rgba(49, 49, 49, 0.69) ;
+}
+.boxes_word{
+     padding: 10px 10px;
+}
+.boxes_word p{
+     color: rgb(7, 192, 35);
+          font-size: 12px;
+          font-weight: 600;
+          font-display: auto;
+          font-family: poppins;
+}
