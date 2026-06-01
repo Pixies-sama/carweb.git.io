@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
      padding: 0;
      margin: 0;
      box-sizing: border-box;
@@ -7,63 +8,84 @@
      list-style-type: none;
      text-decoration: none;
 }
-.main{
+
+body {
+     width: 100%;
+}
+
+.main {
      background-image: url(../media/black-car-4k-8iilwvng2997orpp.jpg);
      background-size: cover;
-     background-position:center ;
+     background-position: center;
      background-repeat: no-repeat;
      height: 100vh;
 }
-.section_one{
+
+.section_one {
      background: rgba(27, 18, 9, 0.82);
      width: 100%;
      height: 100%;
 }
-.nav{
+
+.nav {
      width: 100%;
      position: fixed;
-     margin: auto;  
+     margin: auto;
 }
-.nav_bar{
+
+.nav_bar {
      display: flex;
      align-items: center;
      justify-content: space-between;
      padding: 30px 60px;
 }
-.nav h4 a{
+
+.nav h4 a {
      color: white;
      font-family: Arial, Helvetica, sans-serif;
      font-weight: 600;
      font-size: 24px;
 }
-.nav ul{
+
+.nav ul {
      display: flex;
      justify-content: space-between;
 }
-.nav ul li{
-padding:10px 20px;
+
+.nav ul li {
+     padding: 10px 20px;
 }
-.nav ul a{
+
+#menu {
+     color: white;
+     display: none;
+}
+
+.nav ul a {
      color: white;
      font-style: normal;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      font-size: 16px;
      font-weight: 600;
 }
-.nav ul li:hover{
-    color: rgb(247, 72, 9);
-    background-color: rgba(240, 255, 255, 0.596);
-    transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
-    border-radius: 14px;
-    
+
+.nav ul li:hover {
+     color: rgb(247, 72, 9);
+     background-color: rgba(240, 255, 255, 0.596);
+     transform: scale(1.1);
+     transition: all 0.5s ease-in-out;
+     border-radius: 14px;
+
 }
+
 .one:hover .dropdown_1 {
      visibility: visible;
 }
+
 .nav ul li a:hover {
      color: rgb(247, 72, 9);
 }
+
 .dropdown_1 {
      /* width: 500px; */
      background-color: white;
@@ -78,54 +100,62 @@ padding:10px 20px;
      visibility: hidden;
      box-shadow: 1px 1px 5px hsla(0, 0%, 0%, 0.89);
 }
-.one .dropdown_1 a{
+
+.one .dropdown_1 a {
      color: black;
      font-size: 12px;
 }
-.contact{
+
+.contact {
      padding: 15px 28px;
-     background-color:goldenrod ;
+     background-color: goldenrod;
      color: white;
      border: rgb(105, 103, 103) 1px solid;
      border-radius: 8px;
 }
-.contact a{
+
+.contact a {
      color: white;
      font-size: 16px;
      font-weight: 500;
      font-family: poppins;
 }
-.sec_one{
-     padding-top:200px;
+
+.sec_one {
+     padding-top: 200px;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: space-between;
 }
-.sec_one .sec_one_content{
+
+.sec_one .sec_one_content {
      display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between;
-          gap: 10px;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     gap: 10px;
 }
-.sec_one_content h4{
+
+.sec_one_content h4 {
      color: rgb(243, 176, 7);
      font-size: 14px;
      font-weight: 600;
      font-display: auto;
-     font-family:poppins ;
+     font-family: poppins;
      background-color: rgba(255, 217, 0, 0.326);
      padding: 6px 10px;
      border-radius: 6px;
 }
+
 .sec_one_content h1 {
      color: rgb(227, 226, 225);
      font-size: 60px;
      font-weight: 600;
      font-display: auto;
-     font-family:poppins;
+     font-family: poppins;
 }
+
 .sec_one_content p {
      max-width: 450px;
      width: 100%;
@@ -138,6 +168,7 @@ padding:10px 20px;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      padding: 10px 20px;
 }
+
 .active_btn {
      padding: 15px 28px;
      background-color: rgb(230, 143, 3);
@@ -146,6 +177,12 @@ padding:10px 20px;
      border-radius: 8px;
      font-family: poppins;
 }
+
+.buttons {
+     display: flex;
+     gap: 10px;
+}
+
 .inactive_btn {
      padding: 15px 28px;
      background-color: rgba(218, 165, 32, 0.034);
@@ -154,26 +191,82 @@ padding:10px 20px;
      border-radius: 8px;
      font-family: poppins;
 }
-.sec_two{
+
+.sec_two {
      display: flex;
      align-items: center;
      justify-content: space-between;
      padding: 30px 60px;
      margin-top: 250px;
 }
-.sec_two h2{
+
+.sec_two h2 {
      color: rgb(243, 240, 233);
-          font-size: 30px;
-          font-weight: 600;
-          text-align: center;
-          font-family: poppins;
-          padding: 0px 10px;
+     font-size: 30px;
+     font-weight: 600;
+     text-align: center;
+     font-family: poppins;
+     padding: 0px 10px;
 }
+
 .sec_two p {
      color: rgb(200, 199, 197);
      font-size: 12px;
      font-weight: 600;
      text-align: center;
-     font-family:poppins;
-     padding:0px 10px;
+     font-family: poppins;
+     padding: 0px 10px;
+}
+
+
+
+@media (width <=768px) {
+     .main {
+          height: max-content;
+     }
+
+     .nav ul {
+          display: none;
+     }
+
+     .contact {
+          padding: 8px 28px;
+          background-color: goldenrod;
+          color: white;
+          border: rgb(105, 103, 103) 1px solid;
+          border-radius: 8px;
+          display: none;
+     }
+
+     #menu {
+          display: flex;
+     }
+
+     .nav_bar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 20px;
+     }
+
+     .buttons {
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .sec_one_content h1 {
+          text-align: center;
+          font-size: 32px;
+          font-weight: 600;
+     }
+
+     .sec_two {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+     }
+
 }

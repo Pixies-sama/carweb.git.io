@@ -37,7 +37,7 @@
      padding: 30px 60px;
 }
 
-.nav h4 a{
+.nav h4 a {
      color: white;
      font-family: Arial, Helvetica, sans-serif;
      font-weight: 600;
@@ -112,6 +112,7 @@
      font-weight: 500;
      font-family: poppins;
 }
+
 .sec_one {
      padding-top: 200px;
      display: flex;
@@ -160,6 +161,11 @@
      padding: 10px 20px;
 }
 
+.buttons {
+     display: flex;
+     gap: 10px;
+}
+
 .active_btn {
      padding: 15px 28px;
      background-color: rgb(230, 143, 3);
@@ -177,6 +183,7 @@
      border-radius: 8px;
      font-family: poppins;
 }
+
 .section_two {
      background: rgba(216, 216, 216, 0.493);
      width: 100%;
@@ -216,4 +223,55 @@
      font-weight: 600;
      font-display: auto;
      font-family: poppins;
+}
+
+@media (width <=768px) {
+     .main {
+          height: max-content;
+     }
+
+     .nav ul {
+          display: none;
+     }
+
+     .contact {
+          padding: 8px 28px;
+          background-color: goldenrod;
+          color: white;
+          border: rgb(105, 103, 103) 1px solid;
+          border-radius: 8px;
+          display: none;
+     }
+
+     #menu {
+          display: flex;
+     }
+
+     .nav_bar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 20px;
+     }
+
+     .buttons {
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .sec_one_content h1 {
+          text-align: center;
+          font-size: 32px;
+          font-weight: 600;
+     }
+
+     .sec_two {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+     }
+
 }

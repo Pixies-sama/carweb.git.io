@@ -37,7 +37,7 @@
      padding: 30px 60px;
 }
 
-.nav h4 a{
+.nav h4 a {
      color: white;
      font-family: Arial, Helvetica, sans-serif;
      font-weight: 600;
@@ -68,6 +68,11 @@
      transition: all 0.5s ease-in-out;
      border-radius: 14px;
 
+}
+
+#menu {
+     color: white;
+     display: none;
 }
 
 .one:hover .dropdown_1 {
@@ -112,6 +117,7 @@
      font-weight: 500;
      font-family: poppins;
 }
+
 .sec_one {
      padding-top: 200px;
      display: flex;
@@ -160,6 +166,11 @@
      padding: 10px 20px;
 }
 
+.buttons {
+     display: flex;
+     gap: 10px;
+}
+
 .active_btn {
      padding: 15px 28px;
      background-color: rgb(230, 143, 3);
@@ -177,11 +188,13 @@
      border-radius: 8px;
      font-family: poppins;
 }
-.section_two{
+
+.section_two {
      background: rgba(216, 216, 216, 0.493);
      width: 100%;
      height: 100%;
 }
+
 .sec_two {
      display: flex;
      flex-wrap: wrap;
@@ -190,25 +203,82 @@
      padding: 30px 60px;
      gap: 20px;
 }
-.sec_two img{
+
+.sec_two img {
      width: 100%;
      height: 250px;
      border-top-left-radius: 20px;
      border-top-right-radius: 20px;
 }
-.sec_two .boxes{
-     width: 300px;
+
+.sec_two .boxes {
+     width: 350px;
+     max-width: 100%;
      background-color: rgb(225, 225, 225);
      border-radius: 20px;
-     box-shadow:0 3px 3px 0px rgba(49, 49, 49, 0.69) ;
+     box-shadow: 0 3px 3px 0px rgba(49, 49, 49, 0.69);
 }
-.boxes_word{
+
+.boxes_word {
      padding: 10px 10px;
 }
-.boxes_word p{
+
+.boxes_word p {
      color: rgb(7, 192, 35);
-          font-size: 12px;
+     font-size: 12px;
+     font-weight: 600;
+     font-display: auto;
+     font-family: poppins;
+}
+
+@media (width <=768px) {
+     .main {
+          height: max-content;
+     }
+
+     .nav ul {
+          display: none;
+     }
+
+     .contact {
+          padding: 8px 28px;
+          background-color: goldenrod;
+          color: white;
+          border: rgb(105, 103, 103) 1px solid;
+          border-radius: 8px;
+          display: none;
+     }
+
+     #menu {
+          display: flex;
+     }
+
+     .nav_bar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 20px;
+     }
+
+     .buttons {
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 30px;
+     }
+
+     .sec_one_content h1 {
+          text-align: center;
+          font-size: 32px;
           font-weight: 600;
-          font-display: auto;
-          font-family: poppins;
+     }
+
+     .sec_two {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+     }
+
 }
