@@ -222,7 +222,7 @@ body {
 
 @media (width <=768px) {
      .main {
-          height: max-content;
+          height: 100%;
      }
 
      .nav ul {
